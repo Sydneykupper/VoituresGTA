@@ -17,6 +17,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        string[] tableau = { "Banshee", "Zentorno", "Sultan", "Sanchez", "Buzzard" };
+        for(int i=0;i<tableau.Length;i++)
+        {
+            Console.WriteLine((i+1).ToString() + "."+ tableau [i]);
+        }
+        Console.WriteLine("saisie le numéro du véhicules que tu souhaites remplacer (1 a 5)");
+        int tableauToReplace = Convert.ToInt32 (Console.ReadLine)();
+        Console.WriteLine("Nom du nouveau véhicules ?");
+        Console.ReadLine();
     }
 }
